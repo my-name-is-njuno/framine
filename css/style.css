@@ -87,8 +87,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header #logo h1 a, #header #logo h1 a:hover {
-  color: #fff;
+  color: #800;
 }
+#header 
 
 #header #logo img {
   padding: 0;
@@ -112,17 +113,27 @@ h1, h2, h3, h4, h5, h6 {
   height: 72px;
   transition: all 0.5s;
 }
+#header {
+  background: linear-gradient(45deg, #75b809
+, #1dc8cd);
+  padding: 20px 0;
+  height: 72px;
+  transition: all 0.5s;
+}
 
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
 #intro {
   width: 100%;
+}
+
+.carousel-item {
   height: 100vh;
-  /* background-color: #b2505c; */
-  background: linear-gradient(4315deg, rgba(29, 200, 205, 0.8),	rgba(128,0,0,0.8)), url("../img/img/intro/calculator-1044173_1920.jpg") center top no-repeat;
-  background-size: cover;
-  position: relative;
+}
+
+.carousel-item img {
+    min-height: 598px;
 }
 
 @media (min-width: 1024px) {
@@ -131,11 +142,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-#intro .intro-text {
+.carousel-caption {
   position: absolute;
+  background-color: rgba(0, 0, 0, 0.1);
   left: 0;
-  top: 60px;
+  top: 200px;
   right: 0;
+  max-width: 700px;
+  margin: 0 auto;
   height: calc(50% - 60px);
   display: flex;
   align-items: center;
@@ -144,13 +158,13 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
 }
 
-#intro h2 {
+.carousel-caption h2 {
   margin: 30px 0 10px 0;
   padding: 0 15px;
   font-size: 48px;
   font-weight: 400;
   line-height: 56px;
-  color: #fff;
+  color: #800000;
 }
 
 @media (max-width: 768px) {
@@ -354,6 +368,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #1dc8cd;
 }
 
+
+.carousel-caption {
+  /* position: absolute;
+  top:-40px */
+}
 .nav-menu ul ul {
   margin: 0;
 }
